@@ -5,7 +5,8 @@ const Nav = ({ cartCount = 0, setActiveTab }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-white py-4 px-6 md:px-34 flex items-center mx-auto justify-between sticky top-0 z-50 shadow-sm">
+    <nav className='w-full bg-white shadow-sm sticky top-0 z-50 '>
+      <div className="py-4 px-4 flex items-center max-w-7xl mx-auto justify-between">
       <div className="flex items-center">
         <span onClick={() => document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' })} className="text-xl font-bold text-purple-700 cursor-pointer">DigiTools</span>
       </div>
@@ -73,6 +74,9 @@ const Nav = ({ cartCount = 0, setActiveTab }) => {
           </div>
         </div>
       )}
+      
+        
+      </div>
     </nav>
   );
 };
