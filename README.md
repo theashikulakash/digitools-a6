@@ -1,4 +1,4 @@
-# 🚀 [DIGITOOLS]
+# 🚀 [Project Name]-[DIGITOOLS]
 
 ### 📝 Description
 This is a web application built to help users [explain what it does, e.g., manage their daily tasks / donate blood / buy digital tools]. I created this project to practice my skills in the MERN stack and to provide a clean, user-friendly interface for [target audience].
