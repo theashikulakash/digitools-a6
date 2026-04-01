@@ -37,7 +37,7 @@ const Nav = ({ cartCount = 0, setActiveTab }) => {
           )}
         </button>
 
-        <button className="hidden sm:block text-gray-700 font-medium hover:text-[#4F39F6] transition">
+        <button className="hidden sm:block cursor-pointer text-gray-700 font-medium hover:text-[#670089] transition hover:underline hover:scale-103">
           Login
         </button>
 

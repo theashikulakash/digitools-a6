@@ -9,7 +9,7 @@ const Pricing = () => {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 items-center">
         
         
-        <div className="p-8 border rounded-2xl border-gray-100 order-2 md:order-1 hover:scale-102">
+        <div className="p-8 border rounded-2xl border-gray-200 order-2 md:order-1 hover:scale-102  shadow-sm hover:shadow-md transition-shadow">
           <h3 className="text-lg font-bold text-gray-900">Starter</h3>
           <p className="text-3xl font-bold my-4 text-gray-900">$0<span className="text-sm text-gray-400 font-normal">/Month</span></p>
           <ul className="space-y-3 mb-8 text-gray-600 text-sm">
@@ -21,7 +21,7 @@ const Pricing = () => {
         </div>
  
 
-        <div className="p-8 bg-purple-600 text-white rounded-2xl shadow-xl md:transform  z-10 order-1 md:order-2 hover:scale-102">
+        <div className="p-8 bg-purple-600 text-white rounded-2xl shadow-xl md:transform  z-10 order-1 md:order-2 hover:scale-102  shadow-sm  transition-shadow">
           <span className="bg-yellow-400 text-black text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-wider">Most Popular</span>
           <h3 className="text-lg font-bold mt-4">Pro</h3>
           <p className="text-4xl font-bold my-4">$29<span className="text-sm font-normal opacity-80">/Month</span></p>
@@ -38,7 +38,7 @@ const Pricing = () => {
         </div>
 
   
-        <div className="p-8 border rounded-2xl border-gray-100 order-3 hover:scale-102">
+        <div className="p-8 border rounded-2xl border-gray-200 order-3 hover:scale-102  shadow-sm hover:shadow-md transition-shadow">
           <h3 className="text-lg font-bold text-gray-900">Enterprise</h3>
           <p className="text-3xl font-bold my-4 text-gray-900">$99<span className="text-sm text-gray-400 font-normal">/Month</span></p>
           <ul className="space-y-3 mb-8 text-gray-600 text-sm">
@@ -58,7 +58,11 @@ const Pricing = () => {
             <button className="btn btn-primary rounded-3xl">Explore Products</button>
             <button className="btn btn-primary rounded-3xl">View Pricing</button>
         </div>
-        <p>14-day free trial • No credit card required • Cancel anytime</p>
+        <p>
+          <span className="hover:bg-yellow-200">14-day free trial</span> • 
+          <span className="hover:bg-green-200"> No credit card required</span> • 
+          <span className="hover:bg-red-200"> Cancel anytime</span>
+          </p>
       </div>
     </section>
   );

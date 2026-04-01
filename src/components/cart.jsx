@@ -19,13 +19,13 @@ const Cart = ({ cart, onRemove, onCheckout, activeTab, setActiveTab }) => {
 
           <button
             onClick={() => setActiveTab('products')}
-            className={`btn btn-sm md:btn-md rounded-3xl ${activeTab === 'products' ? 'btn-primary theme-text' : 'btn-outline btn-primary hover:'}`}
+            className={`btn btn-sm md:btn-md rounded-3xl hover:btn-error ${activeTab === 'products' ? 'btn-primary theme-text' : 'btn-outline border-none btn-primary hover:text-white'}`}
           >
             Products
           </button>
           <button
             onClick={() => setActiveTab('cart')}
-            className={`btn btn-sm md:btn-md rounded-3xl ${activeTab === 'cart' ? 'btn-primary theme-text' : 'btn-outline btn-primary hover:theme-text'}`}
+            className={`btn btn-sm md:btn-md rounded-3xl ${activeTab === 'cart' ? 'btn-primary theme-text' : 'btn-outline border-none btn-primary hover:theme-text'}`}
           >
             Cart ({cart.length})
           </button>

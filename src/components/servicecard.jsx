@@ -22,13 +22,13 @@ const ServiceCard = ({ products, onAddToCart, activeTab, setActiveTab, cartCount
           <div className='flex justify-center gap-4'>
             <button
               onClick={() => setActiveTab('products')}
-              className={`btn btn-sm md:btn-md rounded-full px-6 ${activeTab === 'products' ? 'btn-primary theme-text' : 'btn-outline btn-primary'}`}
+              className={`btn btn-sm md:btn-md rounded-full px-6 ${activeTab === 'products' ? 'btn-primary theme-text' : 'btn-outline border-none btn-primary'}`}
             >
               Products
             </button>
             <button
               onClick={() => setActiveTab('cart')}
-              className={`btn btn-sm md:btn-md rounded-3xl ${activeTab === 'cart' ? 'btn-primary theme-text' : 'btn-outline btn-primary hover:text-white'}`}
+              className={`btn btn-sm md:btn-md rounded-3xl hover:btn-error ${activeTab === 'cart' ? 'btn-primary theme-text' : 'btn-outline border-none btn-primary hover:text-white'}`}
             >
               Cart ({cartCount})
             </button>
