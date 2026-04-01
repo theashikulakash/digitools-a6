@@ -1,6 +1,6 @@
 const Pricing = () => {
   return (
-    <section className="py-20 bg-white px-6">
+    <section className="pt-10 bg-white ">
       <div className="text-center mb-16">
         <h2 className="text-3xl font-bold">Simple, Transparent Pricing</h2>
         <p className="text-gray-500 mt-2">Choose the plan that's right for you</p>
@@ -51,17 +51,15 @@ const Pricing = () => {
           <button className="w-full bg-gradient-to-r from-[#4F39F6] to-[#800080] py-3 theme-text rounded-lg font-semibold hover:opacity-90 transition cursor-pointer">Contact Sales</button>
         </div>
       </div>
-      <div className="mt-24 text-center ">
-        <h2 className="text-4xl font-bold mb-2">Ready to Transform Your Workflow?</h2>
-        <p>Join thousands of professionals who are already using Digitools to work smarter. Start your free trial today.</p>
+      <div className="bg-gradient-to-r from-[#4F39F6] to-[#800080] py-12 md:py-16 mt-16 text-center ">
+        <h2 className="text-4xl font-bold mb-2 theme-text">Ready to Transform Your Workflow?</h2>
+        <p className="theme-text">Join thousands of professionals who are already using Digitools to work smarter. Start your free trial today.</p>
         <div className="flex flex-wrap gap-4 mt-5 justify-center mt-8 mb-5">
-            <button className="btn btn-primary rounded-3xl">Explore Products</button>
-            <button className="btn btn-primary rounded-3xl">View Pricing</button>
+            <button className="btn bg-white rounded-3xl">Explore Products</button>
+            <button className="btn bg-transparent border-1 theme-text border-white rounded-3xl">View Pricing</button>
         </div>
-        <p>
-          <span className="hover:bg-yellow-200">14-day free trial</span> • 
-          <span className="hover:bg-green-200"> No credit card required</span> • 
-          <span className="hover:bg-red-200"> Cancel anytime</span>
+        <p className="theme-text">
+          14-day free trial • No credit card required • Cancel anytime
           </p>
       </div>
     </section>
