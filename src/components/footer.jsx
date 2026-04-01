@@ -1,37 +1,48 @@
 const Footer = () => {
   return (
-    <footer className="bg-slate-900 text-white pt-16 pb-8">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-        <div className="col-span-1 md:col-span-1">
-          <h2 className="text-2xl font-bold mb-4">DigiTools</h2>
-          <p className="text-gray-400 text-sm">Premium digital tools for modern professionals.</p>
+    <footer className="bg-slate-900 theme-text pt-16 pb-8">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 mb-12 text-left">
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold theme-text">DigiTools</h2>
+          <p className=" theme-text text-sm max-w-xs">Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>
         </div>
         <div>
-          <h4 className="font-bold mb-4">Product</h4>
-          <ul className="text-gray-400 space-y-2 text-sm">
-            <li>Features</li>
-            <li>Pricing</li>
-            <li>Tools</li>
+          <h4 className="font-bold mb-4 uppercase text-xs tracking-widest  theme-text">Product</h4>
+          <ul className=" space-y-2 text-sm">
+            <li className="hover:text-white theme-text cursor-pointer transition">Features</li>
+            <li className="hover:text-white theme-text cursor-pointer transition">Pricing</li>
+            <li className="hover:text-white theme-text cursor-pointer transition">Templates</li>
+            <li className="hover:text-white theme-text cursor-pointer transition">Integrations</li>
           </ul>
         </div>
         <div>
-          <h4 className="font-bold mb-4">Company</h4>
-          <ul className="text-gray-400 space-y-2 text-sm">
-            <li>About</li>
-            <li>Blog</li>
-            <li>Careers</li>
+          <h4 className="font-bold mb-4 uppercase text-xs tracking-widest  theme-text">Company</h4>
+          <ul className=" theme-text space-y-2 text-sm">
+            <li className="hover:text-white theme-text cursor-pointer transition">About</li>
+            <li className="hover:text-white theme-text cursor-pointer transition">Blog</li>
+            <li className="hover:text-white theme-text cursor-pointer transition">Careers</li>
+            <li className="hover:text-white theme-text cursor-pointer transition">Press</li>
           </ul>
         </div>
         <div>
-          <h4 className="font-bold mb-4">Social Links</h4>
+          <h4 className="font-bold mb-4 uppercase text-xs tracking-widest  theme-text">Resources</h4>
+          <ul className=" theme-text space-y-2 text-sm">
+            <li className="hover:text-white theme-text cursor-pointer transition">Documentation</li>
+            <li className="hover:text-white theme-text cursor-pointer transition">Help Center</li>
+            <li className="hover:text-white theme-text cursor-pointer transition">Community</li>
+            <li className="hover:text-white theme-text cursor-pointer transition">Contacts</li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="font-bold mb-4 uppercase text-xs tracking-widest  theme-text">Social Links</h4>
           <div className="flex gap-4">
-             <div className="w-8 h-8 bg-gray-700 rounded-full"></div>
-             <div className="w-8 h-8 bg-gray-700 rounded-full"></div>
-             <div className="w-8 h-8 bg-gray-700 rounded-full"></div>
+             <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-500 transition cursor-pointer"><i class="fa-brands  fa-instagram"></i></div> 
+             <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition cursor-pointer"><i class="fa-brands fa-facebook-f"></i></div>
+             <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-black transition cursor-pointer"><i class="fa-brands fa-twitter"></i></div>
           </div>
         </div>
       </div>
-      <div className="border-t border-gray-800 pt-8 text-center text-gray-500 text-xs">
+      <div className="border-t border-gray-800 pt-8 text-center theme-text text-xs">
         © 2026 DigiTools. All rights reserved.
       </div>
     </footer>

@@ -1,35 +1,80 @@
-const ServiceCard = () => {
-  const tools = [
-    { name: "AI Writing Pro", price: "29", tag: "Hot Sale", desc: "Generate high-quality content, blogs, and marketing copy in seconds." },
-    { name: "Design Templates Pack", price: "49", tag: "Popular", desc: "1000+ premium assets for professional designers and marketing studios." },
-    { name: "Premium Ebook Assets", price: "19", tag: "10%", desc: "Ready-to-use professional layout for publishing novels and digital books." },
+import React from 'react';
+
+const ServiceCard = ({ products, onAddToCart, activeTab, setActiveTab, cartCount }) => {
     
-  ];
+  const getBadgeStyle = (type) => {
+    switch (type?.toLowerCase()) {
+      case 'best seller': return 'bg-orange-100 text-orange-600';
+      case 'popular': return 'bg-purple-100 text-purple-600';
+      case 'new': return 'bg-green-100 text-green-600';
+      default: return 'bg-blue-100 text-blue-600';
+    }
+  };
 
   return (
-    <section className="py-20 bg-gray-50 px-6">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold mb-4">Premium Digital Tools</h2>
-        <p>Choose from our curated collection of premium digital products designed <br />to boost your productivity and creativity.</p>
-        <div className="inline-flex bg-purple-100 p-1 rounded-full">
-          <button className="bg-purple-600 theme-text px-6 py-2 rounded-full text-sm">Products</button>
-          <button className="px-6 py-2 text-sm text-purple-600">Carts</button>
+    <div className='my-10'>
+      <div className='flex flex-col items-center mx-auto px-6 md:px-20 text-center max-w-4xl'>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Premium Digital Tools</h2>
+        <p className="text-gray-500 text-sm md:text-base leading-relaxed mb-6">
+          Choose from our curated collection of premium digital products designed to boost your productivity and creativity.
+        </p>
+        <div className='flex flex-row gap-4 mb-10'>
+          <button
+            onClick={() => setActiveTab('products')}
+            className={`btn btn-sm md:btn-md rounded-3xl ${activeTab === 'products' ? 'btn-primary theme-text' : 'btn-outline btn-primary hover:text-white'}`}
+          >
+            Products
+          </button>
+          <button
+            onClick={() => setActiveTab('cart')}
+            className={`btn btn-sm md:btn-md rounded-3xl ${activeTab === 'cart' ? 'btn-primary theme-text' : 'btn-outline btn-primary hover:text-white'}`}
+          >
+            Cart ({cartCount})
+          </button>
         </div>
       </div>
-      
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-        {tools.map((tool, i) => (
-          <div key={i} className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition relative">
-            <span className="absolute top-4 right-4 bg-orange-100 text-orange-600 text-xs px-2 py-1 rounded">{tool.tag}</span>
-            <div className="w-12 h-12 bg-purple-100 rounded-lg mb-4 flex items-center justify-center">✨</div>
-            <h3 className="text-xl font-bold mb-2">{tool.name}</h3>
-            <p className="text-gray-500 text-sm mb-4">{tool.desc}</p>
-            <p className="text-2xl font-bold text-purple-600 mb-6">${tool.price}<span className="text-xs text-gray-400">/One Time</span></p>
-            <button className="w-full py-3 bg-gradient-to-r from-[#4F39F6] to-[#800080] theme-text rounded-lg hover:bg-purple-700">Buy Now</button>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-6 "> {products.map((product) => (
+          <div key={product.id} className="bg-white border border-gray-100 rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow relative flex flex-col hover:scale-102">
+            
+            <span className={`absolute top-4 right-4 md:top-6 md:right-6 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider ${getBadgeStyle(product.tag)}`}>
+              {product.tag}
+            </span>
+
+
+            <div className="w-12 h-12 md:w-14 md:h-14 bg-gray-50 rounded-2xl flex items-center justify-center text-2xl md:text-3xl mb-6 shadow-inner">
+              {product.icon}
+            </div>
+
+            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">{product.name}</h3>
+            <p className="text-gray-500 text-xs md:text-sm leading-relaxed mb-4 grow">
+              {product.description}
+            </p>
+
+            <div className="mb-6">
+              <span className="text-xl md:text-2xl font-bold text-gray-900">${product.price}</span>
+              <span className="text-gray-400 text-xs md:text-sm">/{product.period}</span>
+            </div>
+
+
+            <ul className="space-y-2 md:space-y-3 mb-8">
+              {product.features.map((feature, index) => (
+                <li key={index} className="flex items-center gap-3 text-xs md:text-sm text-gray-600">
+                  <span className="text-green-500 font-bold">✓</span>
+                  {feature}
+                </li>
+              ))}
+            </ul>
+
+            <button 
+              onClick={() => onAddToCart(product)}
+              className="w-full py-3 md:py-4 bg-gradient-to-r cursor-pointer from-indigo-600 to-purple-600 theme-text rounded-2xl font-bold hover:opacity-90 transition shadow-lg shadow-purple-100 text-sm md:text-base"
+            >
+              Buy Now
+            </button>
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 

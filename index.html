@@ -6,16 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digitools</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
+:root {
+  --primary-black: #101727; 
+  --primary-hover: #fff;
+}
+
 * {
   font-family: "Manrope", sans-serif;
-  color: #101727;
+  /* color: #101727; */
 }
 
 .theme-text {
-  color: #fff;
+  color: #fff !important;
+}
+
+.theme-text-black {
+  color: var(--primary-black);
+}
+
+.sec-text {
+  color: #9333ea;
+}
+
+.hover-text-white:hover {
+  color: white !important;
 }
 
 #txt-white {

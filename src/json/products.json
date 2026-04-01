@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds using GPT-4 technology.",
+    "price": 29,
+    "period": "One Time",
+    "tag": "Hot Sale",
+    "tagType": "hot",
+    "features": ["Unlimited AI generation", "Advanced plagiarism checker", "Priority email support"],
+    "icon": "✍️"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "1000+ premium UI kits and design assets for professional designers and marketing agencies.",
+    "price": 49,
+    "period": "One Time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["200+ UI components", "Monthly asset updates", "Full commercial license"],
+    "icon": "🎨"
+  },
+  {
+    "id": 3,
+    "name": "Premium Ebook Assets",
+    "description": "Ready-to-use professional layouts for publishing novels, guides, and digital books.",
+    "price": 19,
+    "period": "One Time",
+    "tag": "10% Off",
+    "tagType": "discount",
+    "features": ["Clickable table of contents", "Standard book sizes", "No watermarks"],
+    "icon": "📚"
+  },
+  {
+    "id": 4,
+    "name": "Automation Toolkit",
+    "description": "Automate repetitive tasks and integrate your workflow with powerful API tools.",
+    "price": 79,
+    "period": "Yearly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["50+ SaaS integrations", "API Access", "Custom workflows"],
+    "icon": "⚙️"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder Pro",
+    "description": "Create professional, ATS-friendly resumes in minutes with our drag-and-drop editor.",
+    "price": 15,
+    "period": "Monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["50+ Pro templates", "ATS optimization", "Export to PDF/Docx"],
+    "icon": "📄"
+  },
+  {
+    "id": 6,
+    "name": "Social Media Kit",
+    "description": "Everything you need for social media marketing: post templates, banners, and icons.",
+    "price": 35,
+    "period": "One Time",
+    "tag": "Low Stock",
+    "tagType": "low-stock",
+    "features": ["500+ Instagram assets", "LinkedIn banners", "Stories dashboard"],
+    "icon": "📱"
+  },
+  {
+    "id": 7,
+    "name": "Video Editor Suite",
+    "description": "A cloud-based video editing tool with pre-made transitions and stock music.",
+    "price": 12,
+    "period": "Monthly",
+    "tag": "Trending",
+    "tagType": "trending",
+    "features": ["4K Export", "Stock audio library", "Collaboration tools"],
+    "icon": "🎬"
+  },
+  {
+    "id": 8,
+    "name": "SEO Analyzer Tool",
+    "description": "Get deep insights into your website traffic and keyword rankings automatically.",
+    "price": 59,
+    "period": "Yearly",
+    "tag": "Expert Choice",
+    "tagType": "expert",
+    "features": ["Keyword tracking", "Backlink audit", "Competitor analysis"],
+    "icon": "📈"
+  },
+  {
+    "id": 9,
+    "name": "Code Snippet Library",
+    "description": "A massive collection of verified React, Vue, and Tailwind CSS code snippets.",
+    "price": 25,
+    "period": "One Time",
+    "tag": "Developer Kit",
+    "tagType": "dev",
+    "features": ["Clean code structure", "Regular updates", "GitHub integration"],
+    "icon": "💻"
+  }
+]
