@@ -54,7 +54,7 @@ const ServiceCard = ({ products, onAddToCart, activeTab, setActiveTab, cartCount
           </p>
 
           <div className="mb-6">
-            <span className="text-xl md:text-2xl font-bold text-gray-900">${product.price}</span>
+            <span className="text-xl md:text-2xl font-bold text-gray-900">৳ {product.price}</span>
             <span className="text-gray-400 text-xs md:text-sm">/{product.period}</span>
           </div>
 

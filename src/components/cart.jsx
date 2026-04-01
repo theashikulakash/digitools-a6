@@ -48,7 +48,7 @@ const Cart = ({ cart, onRemove, onCheckout, activeTab, setActiveTab }) => {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 text-sm md:text-base">{item.name}</h4>
-                    <p className="text-purple-600 text-xs md:text-sm font-semibold">${item.price}</p>
+                    <p className="text-purple-600 text-xs md:text-sm font-semibold">৳ {item.price}</p>
                   </div>
                 </div>
 
@@ -79,7 +79,7 @@ const Cart = ({ cart, onRemove, onCheckout, activeTab, setActiveTab }) => {
         <div className="mt-10 pt-8 border-t border-gray-100">
           <div className="flex justify-between items-center mb-8">
             <span className="text-gray-500 font-medium">Subtotal</span>
-            <span className="text-3xl font-extrabold text-gray-900">${total}</span>
+            <span className="text-3xl font-extrabold text-gray-900">৳ {total}</span>
           </div>
 
           <button onClick={onCheckout}
