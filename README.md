@@ -26,7 +26,7 @@ I used a modern tech stack to ensure the website is fast, responsive, and easy t
 ### 📸 Project Preview
 *(Tip: Clcik on the link to preview the live project!)*
 
-![Project Live Link](https://via.placeholder.com/800x400?text=Place+Your+Project+Screenshot+Here)
+![Project Live Link](https://digitools-a6-ph.netlify.app/)
 
 ---
 
