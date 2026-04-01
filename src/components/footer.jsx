@@ -36,9 +36,9 @@ const Footer = () => {
         <div>
           <h4 className="font-bold mb-4 uppercase text-xs tracking-widest  theme-text">Social Links</h4>
           <div className="flex gap-4">
-             <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-500 transition cursor-pointer"><i class="fa-brands  fa-instagram"></i></div> 
-             <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition cursor-pointer"><i class="fa-brands fa-facebook-f"></i></div>
-             <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-black transition cursor-pointer"><i class="fa-brands fa-twitter"></i></div>
+             <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-500 transition cursor-pointer"><a href="https://www.instagram.com/programminghero/" target="blank"><i class="fa-brands  fa-instagram"></i></a></div> 
+             <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition cursor-pointer"><a href="https://www.facebook.com/programmingHero/" target="blank"><i class="fa-brands fa-facebook-f"></i></a></div>
+             <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-black transition cursor-pointer"><a href="https://x.com/ProgrammingHero" target="blank"><i class="fa-brands fa-twitter"></i></a></div>
           </div>
         </div>
       </div>
